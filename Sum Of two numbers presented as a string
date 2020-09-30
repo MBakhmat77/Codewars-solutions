@@ -1,0 +1,11 @@
+function arithmeticExpression(a, b){
+  let c = a + b;
+ a= String(a);
+ b= String(b);
+  
+  let exp =  a + ' + ' + b  + '' +" = " + c ;
+  
+  
+return exp;
+   
+}
