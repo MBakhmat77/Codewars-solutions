@@ -1,0 +1,11 @@
+function slope([a,b,c,d]){
+//  if ( (x2 - x1) ===0) return 'undefined';
+   if ((c-a)===0) return 'undefined';
+  let slopearr = ((d - b ) / (c - a));
+  if ( slopearr === '-Infinity'|| slope === 'Infinity' || slopearr === 'NaN') return "undefined";
+ let num = slopearr.toString();
+  
+return  num;
+     
+//..
+}
