@@ -1,0 +1,7 @@
+function converter (mpg) {
+  let kpl;
+  kpl= mpg * 1.609344/4.54609188 ;
+  kpl=kpl.toFixed(2);
+   return  +kpl;
+  }
+  
