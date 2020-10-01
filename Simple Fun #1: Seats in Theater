@@ -1,0 +1,8 @@
+function seatsInTheater(nCols, nRows, col, row) {
+let totalBlockedSeats ;
+  let sidePeople;
+  let backPeople;
+  sidePeople = nCols - (col - 1) ;
+  backPeople= nRows - row;
+  return totalBlockedSeats = sidePeople * backPeople;
+}
