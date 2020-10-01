@@ -1,0 +1,6 @@
+function arrowArea(a,b) {
+  let arrowArea;
+ return arrowArea = (a * (b/2))/ 2 ;
+
+
+}
