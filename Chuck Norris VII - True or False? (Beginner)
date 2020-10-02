@@ -1,0 +1,6 @@
+function ifChuckSaysSo(){
+//return Boolean(0);
+ // return !true;
+ // return !!0;
+  return !!undefined;
+}
