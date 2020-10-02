@@ -1,0 +1,6 @@
+function problem(x){
+  let val=0;
+  if(typeof x === 'number')
+    return val = (x * 50) + 6; 
+  else return 'Error'
+}
