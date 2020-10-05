@@ -1,0 +1,4 @@
+function howManyTimes(annualPrice, individualPrice) {
+  let times = annualPrice / individualPrice;
+  return Math.ceil(times);
+}
