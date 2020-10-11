@@ -1,0 +1,7 @@
+//https://www.codewars.com/kata/5977387e131c07082b000098
+function getRes(myScore) {
+  let str1 = 'Congratulations, you have passed! Thank you for taking part.'
+  let str2 = 'Sorry, you have failed. Better luck next time! Thank you for taking part.';
+  if (myScore >=70 ) return str1;
+  else return str2;   
+}
