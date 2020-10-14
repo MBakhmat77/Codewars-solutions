@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/5810085c533d69f4980001cf
+function calculator(a,b,sign){
+let res;
+switch(sign){
+case '+': res = a + b ;
+break;
+case '-': res = a - b;
+break;
+case '*': res = a * b ;
+break;
+case '/': res = a / b ;
+break;
+case '%': res ='unknown value';
+break;
+default: res= 'unknown value';
+
+}
+return res;
+}
