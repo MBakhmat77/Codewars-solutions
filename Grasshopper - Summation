@@ -1,0 +1,11 @@
+//https://www.codewars.com/users/koshka2008/completed_solutions
+var summation = function (num) {
+  let sum = 0;
+  let count=0;
+  for ( let i = 1; i <= num; i+=1){
+    
+    sum = sum + i;
+    count++;
+  }
+  return sum;
+}
