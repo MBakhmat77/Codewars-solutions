@@ -1,0 +1,28 @@
+Task
+Given three integers a ,b ,c, return the largest number obtained after inserting the following operators and brackets: +, *, ()
+In other words , try every combination of a,b,c with [*+()] , and return the Maximum Obtained
+Consider an Example :
+With the numbers are 1, 2 and 3 , here are some ways of placing signs and brackets:
+
+1 * (2 + 3) = 5
+1 * 2 * 3 = 6
+1 + 2 * 3 = 7
+(1 + 2) * 3 = 9
+So the maximum value that you can obtain is 9.
+
+https://www.codewars.com/kata/5ae62fcf252e66d44d00008e
+//////////////////////////////////////////////////////////////////////////////////////////
+function expressionMatter(a, b, c) {
+  
+  let result1, result2, result3, result4, result5; 
+  let max;
+  if ( a >= 1 && b >= 1 && c >= 1 && a <= 10 && b <= 10 && c <= 10)
+    
+   result1 = a * ( b + c);
+  result2 = a * b * c;
+  result3 = a + b * c;
+  result4 = ( a + b) * c;
+  result5 = a + (b + c);
+  max = Math.max(result1, result2, result3, result4, result5 );
+  return max;
+}
