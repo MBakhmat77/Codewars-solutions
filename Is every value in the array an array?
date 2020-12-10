@@ -1,0 +1,24 @@
+Is every value in the array an array?
+
+This should only test the second array dimension of the array. The values of the nested arrays don't have to be arrays.
+
+Examples:
+
+[[1],[2]] => true
+['1','2'] => false
+[{1:1},{2:2}] => false
+//////////////////////////////////////////////////////////////////////////
+https://www.codewars.com/kata/582c81d982a0a65424000201
+
+function arrCheck (value){ 
+  for ( let i = 0; i < value.length; i++){
+  if ({}.toString.call((value[i])) === "[object Number]" ) return false;
+if ({}.toString.call((value[i])) === "[object Boolean]" ) return false;
+if ({}.toString.call((value[i])) === "[object Object]" ) return false;
+if ({}.toString.call((value[i])) === "[object String]" ) return false;
+  if ({}.toString.call((value[i])) === "[object Date]" ) return false;
+  if ({}.toString.call((value[i])) === "[object Undefined]" ) return false;
+  if ({}.toString.call((value[i])) === "[object Null]" ) return false;
+  }
+  return true;
+  }
